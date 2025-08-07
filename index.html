@@ -1,103 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css”>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-   <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-   <link rel="stylesheet" href="Portfolio.css">
-   <script type="text/javascript">
-			$("a[href^="#"]").on("click", function(event) {
-   	 			var target = $( $(this).attr("href") );
-  					if( target.length ) {
-        				event.preventDefault();
-        				$("html, body").animate({
-            				scrollTop: target.offset().top
-        				}, 1000);
-   	 				}
-			});
- </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Portfolio.css">
+  <script type="text/javascript">
+    $("a[href^='#']").on("click", function(event) {
+      var target = $( $(this).attr("href") );
+      if(target.length) {
+        event.preventDefault();
+        $("html, body").animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
+  </script>
 </head>
-<div class="container-fluid">
-   <body class="bodystyle">
-      <div class="nav">
-         <img src="https://i.imgur.com/AF5Ju4Y.png" style="width: 450px; height: 100px; padding-left: 100px;">
-         <ul id="menu" style="position:fixed";>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-         </ul>
+<body class="bodystyle">
+  <nav class="nav">
+    <img src="https://i.imgur.com/AF5Ju4Y.png" alt="logo">
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <div id="home" class="divFill"></div>
+
+  <section class="divStyle2">
+    <h1>Home</h1>
+    <div style="padding: 0 0 5% 0;">
+      <img src="https://i.imgur.com/kWzEs02.jpg" width="50%" height="auto" align="left" style="border-radius: 30px; padding: 2%;" />
+      <p style="padding-top: 15px;">&emsp; This website is for Matthew Yamamoto and it is a portfolio about the skills and achievements that I have. This is one of my first projects that I have made using HTML, CSS and JavaScript and there are plenty more to come as I will be updating the portfolio with links to new projects that I will have in the future. If you would like to get in contact with me, please click the Contact Me button in the menu up top. Thank You for checking out my site!</p>
+    </div>
+    <p id="about"></p>
+  </section>
+
+  <section class="divStyle">
+    <h1>About Me</h1>
+    <div style="padding: 0 0 5% 0;">
+      <img src="https://i.imgur.com/rQoEtC6.jpg" width="30%" height="auto" align="right" style="border-radius:10px;"/>
+      <p>&emsp; I am a 2nd year Computer Science Major at California State University Dominguez Hills. I have been studying Java and Object Oriented programming for 2 years and I have just recently started working with HTML, CSS, and JavaScript. I am also mentoring my high school robotics team by helping with programming (in Java) and wherever else they need help with. In my free time I create small projects with my Arduino and CAD/3D print whatever comes to my mind such as a drink coaster or a battle bot design.</p>
+    </div>
+    <p id="portfolio"></p>
+  </section>
+
+  <section class="divStyle2" style="position: static;">
+    <h1>Portfolio</h1>
+    <div class="container-fluid" style="position: static;">
+      <div class="row">
+        <div class="col-sm-6" style="position: static;">
+          <h3>Mentor for TorBots (FIRST Robotics Team)</h3>
+          <a href="http://torbots.com"><img src="https://i.imgur.com/0OzeJnJ.jpg" style="position: static; width: 450px; height: 300px"></a>
+        </div>
+        <div class="col-sm-6" style="position: static;">
+          <h3>Earning Front End Dev. Certification From FCC</h3>
+          <a href="https://www.freecodecamp.com"><img src="https://lh3.googleusercontent.com/dniwX6xiqmYlI7b48FAJWLknel7f3hz3nJm5Ja81S2146j9T7j7x6Bd-Ae-swwtR1To-UGQ=s630-fcrop64=1,615b0000f898ffff" style="position: static; width: 450px; height: 300px"></a>
+        </div>
       </div>
-   </body>
-   <strong>
-      <div id="home" class="divFill"></div>
-      <div class="divStyle2">
-         <h1>Home</h1>
-         <div style="padding: 0 0 5% 0;">
-            <body>
-               <img src="https://i.imgur.com/kWzEs02.jpg" width = "50%" height = "auto%" align = "left" style="border-radius: 30px 30px 30px 30px; padding: 2%;" />
-               <p style="padding-top: 15px;">&emsp; This website is for Matthew Yamamoto and it is a portfolio about the skills and achievements that I have. This is one of my first projects that I have made using HTML, CSS and JavaScript and there are plenty more to come as I will be updating the portfolio with links to new projects that I will have in the future. If you would like to get in contact with me, please click the Contact Me button in the menu up top. Thank You for checking out my site!</p>
-            </body>
-         </div>
-         <p id="about"></p>
-      </div>
-      <div  class="divStyle">
-         <h1>About Me</h1>
-         <div style="padding: 0 0 5% 0;">
-            <body>
-               <img src="https://i.imgur.com/rQoEtC6.jpg" width = "30%" height = "auto" align = "right" style="border-radius:10px;"/>
-               <p>&emsp; I am a 2nd year Computer Science Major at California State University Dominguez Hills. I have been studying Java and Object Oriented programming for 2 years and I have just recently started working with HTML, CSS, and JavaScript. I am also mentoring my high school robotics team by helping with programming (in Java) and wherever else they need help with. In my free time I create small projects with my Arduino and CAD/3D print whatever comes to my mind such as a drink coaster or a battle bot design.</p>
-            </body>
-         </div>
-         <p id="portfolio"></p>
-      </div>
-      <div class="divStyle2" style="position: static;">
-         <h1>Portfolio</h1>
-         <div class="container-fluid" style="position: static;">
-            <div class="row">
-               <div class="col-sm-6" style="position: static;">
-                  <h3>Mentor for TorBots (FIRST Robotics Team)</h3>
-                  <a href="http://torbots.com"><img src="https://i.imgur.com/0OzeJnJ.jpg" style="position: static; width: 450px; height: 300px"></a>
-               </div>
-               <div class="col-sm-6" style="position: static;">
-                  <h3>Earning Front End Dev. Certification From FCC</h3>
-                  <a href="https://www.freecodecamp.com"><img src="https://lh3.googleusercontent.com/dniwX6xiqmYlI7b48FAJWLknel7f3hz3nJm5Ja81S2146j9T7j7x6Bd-Ae-swwtR1To-UGQ=s630-fcrop64=1,615b0000f898ffff" style="position: static; width: 450px; height: 300px"></a>
-               </div>
-            </div>
-         </div>
-         <p></p>
-         <p id="contact"></p>
-      </div>
-      <div class="divStyle">
-         <h1>Contact</h1>
-         <center>
-            <form action="MAILTO:mattyamcollege@gmail.com" method="post" enctype="text/plain">
-               First Name:<br>
-               <input id="written" type="text" name="First Name" placeholder=" First"><br>
-               Last Name:<br>
-               <input id="written" type="text" name="Last Name" placeholder=" Last"><br>
-               E-mail:<br>
-               <input id="written" type="text" name="E-mail" placeholder=" Your E-mail"><br>
-               Comments:
-               <textarea id="write" name="Comments" placeholder=" Write something here..."></textarea>
-               <input id="button" type="submit" value="Send">
-               <input id="button" type="reset" value="Reset">
-            </form>
-         </center>
-         <p></p>
-      </div>
-      <footer style="color: black;">
-         <div class="divStyle3">
-            <h3>Created by Matthew Yamamoto
-               <a href="https://www.linkedin.com/in/matthewyamamoto1197"><img src="https://i.imgur.com/aSDN68z.png" style="width: auto; height: 32px; float: right;"></a>
-               <a href="https://github.com/mlyhoops"><img src="https://i.imgur.com/ZhUX47t.png" style="width: auto; height: 32px; float: right;"></a>
-               <a href="https://codepen.io/mlyhoops"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" style="width: auto; height: 32px; float: right;"></a>
-               <span style="float:right;">Find me at: &emsp;</span>
-            </h3>
-            <p></p>
-            <p></p>
-         </div>
-   </strong>
-</div>
-</footer>
+    </div>
+    <p></p>
+    <p id="contact"></p>
+  </section>
+
+  <section class="divStyle">
+    <h1>Contact</h1>
+    <center>
+      <form action="MAILTO:mattyamcollege@gmail.com" method="post" enctype="text/plain">
+        First Name:<br>
+        <input id="written" type="text" name="First Name" placeholder=" First"><br>
+        Last Name:<br>
+        <input id="written" type="text" name="Last Name" placeholder=" Last"><br>
+        E-mail:<br>
+        <input id="written" type="text" name="E-mail" placeholder=" Your E-mail"><br>
+        Comments:
+        <textarea id="write" name="Comments" placeholder=" Write something here..."></textarea>
+        <input id="button" type="submit" value="Send">
+        <input id="button" type="reset" value="Reset">
+      </form>
+    </center>
+    <p></p>
+  </section>
+
+  <footer class="divStyle3">
+    <h3>Created by Matthew Yamamoto
+      <a href="https://www.linkedin.com/in/matthewyamamoto1197"><img src="https://i.imgur.com/aSDN68z.png" style="width: auto; height: 32px; float: right;"></a>
+      <a href="https://github.com/mlyhoops"><img src="https://i.imgur.com/ZhUX47t.png" style="width: auto; height: 32px; float: right;"></a>
+      <a href="https://codepen.io/mlyhoops"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" style="width: auto; height: 32px; float: right;"></a>
+      <span style="float:right;">Find me at: &emsp;</span>
+    </h3>
+    <p></p>
+    <p></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
